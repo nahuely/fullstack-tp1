@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+aside#menu, section#content {
+	float:left;
+	display: inline;
+	height: 98vh;
+}
+
+aside#menu {
+	width: 250px;
+	background: lightcoral;
+	position: fixed;
+}
+
+section#content {
+	margin-left: 250px;
+	display: flex;
+	align-items: center;
+	width: auto;
+}
+
+span.item {
+	flex:0 0 400px;
+	height: 400px;
+	border: 3px dashed black;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	background: lightblue;
+	cursor: pointer;
+}
+
+span.item:nth-child(1) {
+	margin-left: 0;
+}
+
+#logo {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+nav#nav {
+	background: honeydew;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 3px dashed black;
+	min-height: 500px;
+	padding: 30px;
+	margin-top: 100px;
+}
