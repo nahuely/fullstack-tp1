@@ -4,8 +4,8 @@ console.log(myArray);
 var reverse = function(array) {
 	if(Array.isArray(array)) {
 		var arrayAux = array.splice(0);
-		var arrayLen = arrayAux.length - 1;
-		for(var x = arrayLen; x >= 0; x--) {
+		var lastValidIndex = arrayAux.length - 1;
+		for(var x = lastValidIndex; x >= 0; x--) {
 			array.push(arrayAux[x]);
 		}
 		return true;		
