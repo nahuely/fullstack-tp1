@@ -12,9 +12,7 @@ var alumnos = [
 
 function filtrarEdad(lista, edadMin, sexo, campoADevolver) {
 	var listaFiltrada = lista.filter(function(obj) {
-		if(obj.edad > edadMin && obj.sexo === sexo) {
-			return true;
-		}
+		return obj.edad > edadMin && obj.sexo === sexo;
 	});
 	
 	return listaFiltrada.map(function(obj) {
