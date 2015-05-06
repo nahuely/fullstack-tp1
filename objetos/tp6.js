@@ -1,6 +1,7 @@
 function filtrarKeys(obj, filtros, bool) {
+	'use strict';
 	if(Object.prototype.toString.call(obj) === "[object Object]" && Object.prototype.toString.call(filtros) === "[object Array]") {
-		var inclusionFlag = (bool) ? true : false;
+		var inclusionFlag = bool || false;
 		var keys = Object.keys(obj);
 		return keys.filter(function(value) {
 			if(inclusionFlag) {
