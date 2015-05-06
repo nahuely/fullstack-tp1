@@ -4005,7 +4005,7 @@ var rowData =
     }
 	  var occurrences = {};
 	  rawArray.forEach(function(string) {
-		  var country = string.split(",")[1];
+		  var country = string.split(",")[1].trim();
 		  if(occurrences.hasOwnProperty(country)) {
 			  occurrences[country]++;
 		  } else {
