@@ -21,19 +21,12 @@ var res = merge(foo, bar);
 console.log(res.a, res.z); // 1 "sarasa"
 console.log(foo === res, bar === res); // false false
 
-
-
-
 //var u = merge(foo);
 //console.log(foo === u);
 
 
 
 /*Crear una función que dado un objeto obj retorne el total de la suma de todos los valores de sus propiedades.*/
-
-var obj = {a: 1, b:1,c:2,d:3};
-console.log(sumarPropiedades(obj)); // 7
-
 
 function sumarPropiedades(obj) {
 	var result = 0;
@@ -42,18 +35,9 @@ function sumarPropiedades(obj) {
 	}
 	return result;
 }
-var obj = {a: 1, b:1,c:2,d:3};
-console.log(sumarPropiedades(obj));
 
-//O esta manera
-function sumarPropiedades1(obj) {
-	return Array.prototype.reduce.call(Object.keys(obj), function(valorPrevio, valorActual) {
-		return valorPrevio + valorActual;
-	});
-}
-console.log(sumarPropiedades1(obj));
-
-
+var obj = {a: 1, b:2,c:3,d:4};
+console.log(sumarPropiedades(obj)); // 7
 
 
 /*Crear una función poseenMismasPropiedades que dado dos objetos obj1 y obj2, retorne 
